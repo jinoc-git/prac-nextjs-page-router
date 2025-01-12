@@ -13,7 +13,6 @@ Content-Type: application/json
   "title": "code-it"
 }
 
-
 ###
 
 GET http://localhost:3000/api/short-links/123
@@ -26,7 +25,7 @@ Cookie: session-id=codeit1234
 
 ### 
 
-POST http://localhost:3000/api/short-links/
+POST http://localhost:3000/api/short-links
 Content-Type: application/json
 
 {
