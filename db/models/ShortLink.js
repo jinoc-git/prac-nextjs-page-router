@@ -12,6 +12,6 @@ const shortLinkSchema = new mongoose.Schema(
 );
 
 const ShortLink =
-  mongoose.model['ShortLink'] || mongoose.model('ShortLink', shortLinkSchema);
+  mongoose.models['ShortLink'] || mongoose.model('ShortLink', shortLinkSchema);
 
 export default ShortLink;

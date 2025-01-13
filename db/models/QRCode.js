@@ -11,6 +11,6 @@ const qrCodeSchema = new mongoose.Schema(
 );
 
 const QRCode =
-  mongoose.model['QRCode'] || mongoose.model('QRCode', qrCodeSchema);
+  mongoose.models['QRCode'] || mongoose.model('QRCode', qrCodeSchema);
 
 export default QRCode;
