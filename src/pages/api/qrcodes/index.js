@@ -1,15 +1,18 @@
 import mongoose from 'mongoose';
 import dbConnect from '../../../../db/dbConnect';
+import QRCode from '../../../../db/models/QRCode';
 
 export default async function handler(req, res) {
   await dbConnect();
-  console.log(mongoose.connection.readyState);
 
   switch (req.method) {
     case 'POST':
       res.status(201).send(req.body);
       break;
     case 'GET':
+      const props = Object.keys(QRCode.schema.paths);
+      console.log(props);
+
       res.status(200).send([
         {
           id: 'abc',
