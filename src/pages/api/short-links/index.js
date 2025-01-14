@@ -1,6 +1,5 @@
-import mongoose from 'mongoose';
-import dbConnect from '../../../../db/dbConnect';
-import ShortLink from '../../../../db/models/ShortLink';
+import dbConnect from '../../../db/dbConnect';
+import ShortLink from '../../../db/models/ShortLink';
 
 export default async function handler(req, res) {
   await dbConnect();
