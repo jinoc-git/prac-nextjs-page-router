@@ -1,5 +1,5 @@
-import dbConnect from '../../../db/dbConnect';
-import QRCode from '../../../db/models/QRCode';
+import dbConnect from '@/db/dbConnect';
+import QRCode from '@/db/models/QRCode';
 
 export default async function handler(req, res) {
   await dbConnect();

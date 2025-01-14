@@ -1,4 +1,4 @@
-import QRCode from '../../../db/models/QRCode';
+import QRCode from '@/db/models/QRCode';
 
 export default async function handler(req, res) {
   const {
